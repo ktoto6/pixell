@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Rubik';
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/pixel-art-rural-landscape-background_52683-125379.jpg');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    padding-top: 130px;
+    padding-left: 100px;
+    color: #A62F00;
+}
+
+p {
+    font-size: 30px;
+    padding-left: 100px;
+    color:  rgb(255, 101, 101);
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+.knop {
+background-color: rgb(255, 184, 144);
+    border: 3px solid rgb(255, 95, 32);
+    color: #A62F00;
+    margin: 320px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+}
+
+
+main {
+    background-color: rgb(40, 16, 48);
+    height:100vh;
+    width: 100vw;
+    display: none;
+}
+
+.field {
+    background-color: rgb(0, 0, 0);
+    width: 90vw;
+    height: 45vw;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: .5px;
+
+}
+
+.cell {
+    background-color: rgb(54, 54, 54);
+
+}
+
+.color {
+width: 5vw;
+height: 5vw;
+}
+
+.red {
+    background-color: #BF3030;
+}
+
+.blue {
+background-color: #3216B0;
+}
+
+.black {
+background-color: black;
+}
+
+.green {
+background-color: #00BB3F;
+}
+
+.yellow {
+background-color: #FFEE40;
+}
+
+.cell:hover {
+    background-color: var(--current-color);
+    opacity: .5;
+
+}
+
+.fill {
+    background-color: rgb(255, 255, 255);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eraser {
+    background-color: rgb(255, 255, 255);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+:root {
+    --current-color: rgb(54, 54, 54);
+    --default-color: rgb(54, 54, 54);
+}
+
+.selected {
+    border: 2px solid black;
+}
+.conservation {
+    background-color: rgb(255, 255, 255);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+}
